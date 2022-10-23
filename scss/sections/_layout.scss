@@ -1,0 +1,233 @@
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+
+header .layout{
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  grid-template-rows: 50px 500px 50px;
+}
+
+header .layout .top{
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 2;
+}
+header .layout .top .logo-msg{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header .layout .top .logo-msg p{
+  margin: 0;
+  padding-left: 10px;
+  width: 60%;
+  backdrop-filter: blur(15px);
+}
+header .layout .top .toggle-container{
+  display: none;
+}
+header .layout .banner{
+  grid-column: 1 /-1;
+  grid-row: 2;
+  margin-top: -25px;
+
+}
+header .layout .nav-cont{
+  grid-column: 2;
+  grid-row: 3;
+}
+
+main{
+  border: 1px solid red;
+}
+main .layout{
+  margin-top: -100px;
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  grid-template-rows: 100px 450px 450px 25px;
+}
+
+main .layout > :nth-child(1){
+  grid-column: 2;
+  grid-row: 2;
+  backdrop-filter: blur(50px);
+}
+main .layout> :nth-child(2){
+  grid-column: 2;
+  grid-row: 3;
+  backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.2);
+}
+main #project h1{
+  border: 1px solid red;
+  text-align: center;
+  padding: 10px;
+}
+main .layout > :nth-child(3){
+  grid-column: 1;
+  grid-row: 1 / -1;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 20px;
+  backdrop-filter: blur(50px);
+  box-shadow: 1px -1px 4px  black;
+}
+main .layout> :nth-child(3) .container{
+  height: 100%;
+}
+main .layout> :nth-child(3) .container .row{
+  height: 50%;
+}
+footer{
+  height: 125px;
+  margin-top:  -25px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  
+
+header .layout{
+  display: grid;
+  grid-template-columns:  1fr;
+  grid-template-rows: 50px 500px 50px;
+}
+
+header .layout .top{
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 2;
+}
+header .layout .top .logo-msg {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header .layout .top .logo-msg p {
+  margin: 0;
+  padding-left: 10px;
+  width: 32%;
+  backdrop-filter: blur(15px);
+}
+
+header .layout .top .toggle-container {
+  display: none;
+}
+header .layout .banner{
+  grid-column: 1;
+  grid-row: 2;
+}
+header .layout .nav-cont{
+  grid-column: 1;
+  grid-row: 3;
+}
+
+
+main{
+  border: 1px solid blue;
+}
+main .layout {
+  border: 1px solid red;
+  display: grid;
+  grid-template-rows: 400px 400px auto;
+}
+main .layout> :nth-child(3){
+  border: 1px solid red;
+}
+
+
+footer{
+  height: 100px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  
+
+header .layout{
+  display: grid;
+  grid-template-columns:  1fr;
+  grid-template-rows: 60px auto auto;
+  overflow: auto;
+}
+header .layout .top{
+  grid-column: 1;
+  grid-row: 1;
+}
+header .layout .top .logo-msg{
+  display: none;
+}
+header .layout .top .toggle-container{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+header .layout .nav-cont{
+  grid-column: 1;
+  grid-row: 2;
+}
+header .layout .banner{
+  grid-column: 1;
+  grid-row: 3;
+}
+
+
+main {
+  border: 1px solid blue;
+}
+
+main .layout {
+  border: 1px solid red;
+  display: grid;
+  grid-template-rows: 400px 400px auto;
+}
+
+
+footer {
+  height: 100px;
+}
+}

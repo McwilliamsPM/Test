@@ -1,0 +1,97 @@
+
+
+@media screen and (min-width: 1200px) {
+  header{
+    background: linear-gradient( rgba(22, 32, 174, 0.2), rgba(22, 32, 174, 0.2)), url('/images/banner.jpg') center / cover no-repeat fixed;
+  }
+  header .layout .top .logo-msg p {
+    color: rgb(229, 119, 137);
+  }
+  nav{
+    background: rgb(229, 119, 137);
+  }
+  nav ul li a:hover{
+    background: rgb(97, 97, 203);
+    color: white;
+    border-radius: 5px;
+  }
+  nav ul li a:active{
+    background: rgb(97, 97, 203);
+    color: gold;
+    border-radius: 5px;
+  }
+
+  main{
+    background: white;
+  }
+  footer{
+    background: red;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1999px) {
+  header{
+    background: linear-gradient( rgba(22, 32, 174, 0.2), rgba(22, 32, 174, 0.2)), url('/images/banner.jpg') center / cover no-repeat fixed;
+  }
+  header .layout .top .logo-msg p {
+    color: rgb(229, 119, 137);
+  }
+    nav{
+    background: rgba(229, 119, 137, 0.8);
+  }
+  nav ul li a:hover{
+    background: rgb(97, 97, 203);
+    color: white;
+    border-radius: 5px;
+  }
+  nav ul li a:active{
+    background: rgb(97, 97, 203);
+    color: gold;
+    border-radius: 5px;
+  }
+
+  main{
+    background: white;
+  }
+  footer{
+    background: rgb(97, 97, 203);
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  header{
+    background: linear-gradient( rgba(22, 32, 174, 0.2), rgba(22, 32, 174, 0.2)), url('/images/banner.jpg') center / cover no-repeat fixed;
+  }
+  header .layout .top .logo-msg p {
+    color: rgb(229, 119, 137);
+  }
+  header .layout .top{
+    backdrop-filter: blur(20px);
+  }
+    .m-open:hover, .m-close:hover{
+      background:rgb(229, 119, 137) ;
+      color: white;
+    }
+    .m-open:active, .m-close:active{
+      background:rgb(229, 119, 137) ;
+      color: gold;
+    }
+  nav{
+    backdrop-filter: blur(20px);
+  }
+    nav ul li a:hover{
+    color: white;
+    border-radius: 5px;
+  }
+  nav ul li a:active{
+    color: gold;
+    border-radius: 5px;
+  }
+  footer{
+    background: rgb(97, 97, 203);
+  }
+}
